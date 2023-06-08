@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/api/v1/user', UserRoute.router)
 
 // app.get('/', async (req: Request, res: Response, next) => {
-//   Promise.reject(new Error('promiss rejection here '))
+//   console.log(x)
 // })
 
 app.use(globalErrorHandelers)
