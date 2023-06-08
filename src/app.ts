@@ -1,6 +1,7 @@
-import express, { Application, Request, Response } from 'express'
 import cors from 'cors'
-import userRouter from './app/modules/users/users.route'
+import express, { Application } from 'express'
+import globalErrorHandelers from './app/middlewares/globalErrorHandeler'
+import { UserRoute } from './app/modules/user/users.route'
 const app: Application = express()
 
 app.use(cors())
@@ -10,10 +11,12 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.use('/user/v1/user/', userRouter)
+app.use('/api/v1/user', UserRoute.router)
 
-app.get('/', async (req: Request, res: Response) => {
-  res.send('Hello World!')
-})
+// app.get('/', async (req: Request, res: Response, next) => {
+//   Promise.reject(new Error('promiss rejection here '))
+// })
+
+app.use(globalErrorHandelers)
 
 export default app

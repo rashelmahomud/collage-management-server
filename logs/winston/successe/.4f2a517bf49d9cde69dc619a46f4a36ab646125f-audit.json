@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\successe\\.4f2a517bf49d9cde69dc619a46f4a36ab646125f-audit.json",
+    "files": [
+        {
+            "date": 1686210711823,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\successe\\cm-2023-06-08-13.log",
+            "hash": "46f1f26e5b8a7b7bfd645a82678d690d8c49c771f014dd5c8706f12c55a07cd0"
+        }
+    ],
+    "hashType": "sha256"
+}
