@@ -1,19 +1,24 @@
-import express, { Application, Request, Response } from 'express'
-import cors from 'cors'
-import userRouter from './app/modules/users/users.route'
-const app: Application = express()
+import cors from 'cors';
+import express, { Application } from 'express';
+import globalErrorHandelers from './app/middlewares/globalErrorHandeler';
+import { SemesterRoute } from './app/modules/academicSemester/academicSemester.route';
+import { UserRoute } from './app/modules/user/users.route';
+const app: Application = express();
 
-app.use(cors())
+app.use(cors());
 
 // parser s code here
 
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.use('/user/v1/user/', userRouter)
+app.use('/api/v1/user', UserRoute);
+app.use('/api/v1/semester', SemesterRoute);
 
-app.get('/', async (req: Request, res: Response) => {
-  res.send('Hello World!')
-})
+// app.get('/', async (req: Request, res: Response, next) => {
+//   console.log(x)
+// })
 
-export default app
+app.use(globalErrorHandelers);
+
+export default app;
