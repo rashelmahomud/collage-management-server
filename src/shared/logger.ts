@@ -27,7 +27,7 @@ const logger = createLogger({
         'logs',
         'winston',
         'successe',
-        'cm-%DATE%..ts'
+        'cm-%DATE%.log'
       ),
       datePattern: 'YYYY-MM-DD-HH',
       zippedArchive: true,
@@ -48,7 +48,7 @@ const errorlogger = createLogger({
         'logs',
         'winston',
         'errors',
-        'cm-%DATE%..ts'
+        'cm-%DATE%.log'
       ),
       datePattern: 'YYYY-MM-DD-HH',
       zippedArchive: true,
