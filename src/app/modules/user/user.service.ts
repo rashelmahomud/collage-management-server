@@ -6,12 +6,9 @@ import { genaratedUserId } from './user.ulites';
 
 const createUser = async (user: IUser): Promise<IUser | null> => {
   //auto incremental genarated id
-
   const id = await genaratedUserId();
   user.id = id;
-
   /// default passworld
-
   if (!user.password) {
     user.password = config.default_user_Pass as string;
   }

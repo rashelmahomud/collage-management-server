@@ -1,7 +1,8 @@
 import cors from 'cors';
-import express, { Application } from 'express';
+import express, { Application, NextFunction, Request, Response } from 'express';
 import globalErrorHandelers from './app/middlewares/globalErrorHandeler';
 
+import httpStatus from 'http-status';
 import routers from './app/routes';
 const app: Application = express();
 
@@ -21,5 +22,20 @@ app.use('/api/v1', routers);
 // })
 
 app.use(globalErrorHandelers);
+
+// kaw jodi api bul day taholla ai error ta sbe=============
+app.use((req: Request, res: Response, next: NextFunction) => {
+  res.status(httpStatus.NOT_FOUND).json({
+    success: false,
+    message: 'Not Found',
+    errorMessage: [
+      {
+        path: '.',
+        message: 'api not found',
+      },
+    ],
+  });
+  next();
+});
 
 export default app;
