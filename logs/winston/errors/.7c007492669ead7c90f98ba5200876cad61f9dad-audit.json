@@ -1,115 +1,125 @@
 {
-  "keep": {
-    "days": true,
-    "amount": 14
-  },
-  "auditLog": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\.7c007492669ead7c90f98ba5200876cad61f9dad-audit.json",
-  "files": [
-    {
-      "date": 1686210711836,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-08-13.log",
-      "hash": "815e26ac33889874146071f4a6bf92b5ad472785cf793367542a405f50e562bd"
+    "keep": {
+        "days": true,
+        "amount": 14
     },
-    {
-      "date": 1686211233393,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-08-14.log",
-      "hash": "6e5c40acd2ec7effb6c1fda4bcabf8ecf024a2d39d91b48539be4f9b1b9ea97c"
-    },
-    {
-      "date": 1686244162013,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-08-23.log",
-      "hash": "74dd09d4e41529d6b4da88b36b1e79ede3bc9187585158d69fb42803e62047e6"
-    },
-    {
-      "date": 1686247348185,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-00.log",
-      "hash": "de71bdd6e47c3fa2fb926c51bc66f93e8567be0f84b3419349f0640d404216f4"
-    },
-    {
-      "date": 1686250817407,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-01.log",
-      "hash": "a5112c7397e896298d0b711659dacc2099e3ca64aa53a4b869384c07faa86278"
-    },
-    {
-      "date": 1686278355406,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-08.log",
-      "hash": "85d5935162fcfee35f8d120ab4877be5e29ac500d306ad21527cc371908c97eb"
-    },
-    {
-      "date": 1686283267316,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-10.log",
-      "hash": "220d7a52bf350408db159f05d848bb80d3d83cfae26e7695a26fa5254fd7f97a"
-    },
-    {
-      "date": 1686294184169,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-13.log",
-      "hash": "94259ed06f706932ced2939e116a2983e6e4398e0de737da37679cf9b9b124a5"
-    },
-    {
-      "date": 1686298981861,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-14.log",
-      "hash": "d8cf8f77238857ee633452a078cea9a509d6d790beaffe3b4f0be87286036ec2"
-    },
-    {
-      "date": 1686302296968,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-15.log",
-      "hash": "dba9c01c34ed41443b8d5f0784823e6e057f921c748d662ee8fb6a77e2eea750"
-    },
-    {
-      "date": 1686305880681,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-16.log",
-      "hash": "ed2df4f53f6dd29bcb867c3096fa3fffee4c9cd75d9a0b10d3ce79b951bdc90f"
-    },
-    {
-      "date": 1687184879686,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-19-20.log",
-      "hash": "0dd38eac61707393a97da03ccc37e2b4acd915560e350065f9587170c3335d3d"
-    },
-    {
-      "date": 1687186868011,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-19-21.log",
-      "hash": "0a39f2c92951678b8d058bce6bfd84d33e0faa80ef334ddc90ef7a7ce4f556b1"
-    },
-    {
-      "date": 1687190968410,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-19-22.log",
-      "hash": "c3fa68b93841ede93750ae40f0c93bf19498cea66e6b2cd19eeeb2353403324a"
-    },
-    {
-      "date": 1687196458876,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-19-23.log",
-      "hash": "119b31ab39fa27b34bad93ad11ecdb728442bc15d9e2f5b7512abf52e5ab9842"
-    },
-    {
-      "date": 1687198891264,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-20-00.log",
-      "hash": "4bc22e36a55f91ec48dc72bd3024232b0432eb3dfe8761b1a094432de06cea36"
-    },
-    {
-      "date": 1687226146906,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-20-07.log",
-      "hash": "62daf34298e7aa2870794a750491dd7b78c2b89af9337878992356d171c8bf5c"
-    },
-    {
-      "date": 1687226417154,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-20-08.log",
-      "hash": "2737459ab1f175f03c7dba99b1bba3c90284bed18c0891845894ba839d513a8d"
-    },
-    {
-      "date": 1687231122522,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-20-09.log",
-      "hash": "9ef9b1e6765528b0311c1f4616e1880ff89b5e13fc8acecff3d62c0d41462f2e"
-    },
-    {
-      "date": 1687234275450,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-20-10.log",
-      "hash": "40817b67189e68e2c0e0957f4425cdb3a60254c2490af5d2c41c74045cc0cec1"
-    },
-    {
-      "date": 1687237698952,
-      "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-20-11.log",
-      "hash": "db3dd984a618e4e4eacff0d631b2eaaff586b77bc6825235121ed82fd3f5bae9"
-    }
-  ],
-  "hashType": "sha256"
+    "auditLog": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\.7c007492669ead7c90f98ba5200876cad61f9dad-audit.json",
+    "files": [
+        {
+            "date": 1686210711836,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-08-13.log",
+            "hash": "815e26ac33889874146071f4a6bf92b5ad472785cf793367542a405f50e562bd"
+        },
+        {
+            "date": 1686211233393,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-08-14.log",
+            "hash": "6e5c40acd2ec7effb6c1fda4bcabf8ecf024a2d39d91b48539be4f9b1b9ea97c"
+        },
+        {
+            "date": 1686244162013,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-08-23.log",
+            "hash": "74dd09d4e41529d6b4da88b36b1e79ede3bc9187585158d69fb42803e62047e6"
+        },
+        {
+            "date": 1686247348185,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-00.log",
+            "hash": "de71bdd6e47c3fa2fb926c51bc66f93e8567be0f84b3419349f0640d404216f4"
+        },
+        {
+            "date": 1686250817407,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-01.log",
+            "hash": "a5112c7397e896298d0b711659dacc2099e3ca64aa53a4b869384c07faa86278"
+        },
+        {
+            "date": 1686278355406,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-08.log",
+            "hash": "85d5935162fcfee35f8d120ab4877be5e29ac500d306ad21527cc371908c97eb"
+        },
+        {
+            "date": 1686283267316,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-10.log",
+            "hash": "220d7a52bf350408db159f05d848bb80d3d83cfae26e7695a26fa5254fd7f97a"
+        },
+        {
+            "date": 1686294184169,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-13.log",
+            "hash": "94259ed06f706932ced2939e116a2983e6e4398e0de737da37679cf9b9b124a5"
+        },
+        {
+            "date": 1686298981861,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-14.log",
+            "hash": "d8cf8f77238857ee633452a078cea9a509d6d790beaffe3b4f0be87286036ec2"
+        },
+        {
+            "date": 1686302296968,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-15.log",
+            "hash": "dba9c01c34ed41443b8d5f0784823e6e057f921c748d662ee8fb6a77e2eea750"
+        },
+        {
+            "date": 1686305880681,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-09-16.log",
+            "hash": "ed2df4f53f6dd29bcb867c3096fa3fffee4c9cd75d9a0b10d3ce79b951bdc90f"
+        },
+        {
+            "date": 1687184879686,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-19-20.log",
+            "hash": "0dd38eac61707393a97da03ccc37e2b4acd915560e350065f9587170c3335d3d"
+        },
+        {
+            "date": 1687186868011,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-19-21.log",
+            "hash": "0a39f2c92951678b8d058bce6bfd84d33e0faa80ef334ddc90ef7a7ce4f556b1"
+        },
+        {
+            "date": 1687190968410,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-19-22.log",
+            "hash": "c3fa68b93841ede93750ae40f0c93bf19498cea66e6b2cd19eeeb2353403324a"
+        },
+        {
+            "date": 1687196458876,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-19-23.log",
+            "hash": "119b31ab39fa27b34bad93ad11ecdb728442bc15d9e2f5b7512abf52e5ab9842"
+        },
+        {
+            "date": 1687198891264,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-20-00.log",
+            "hash": "4bc22e36a55f91ec48dc72bd3024232b0432eb3dfe8761b1a094432de06cea36"
+        },
+        {
+            "date": 1687226146906,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-20-07.log",
+            "hash": "62daf34298e7aa2870794a750491dd7b78c2b89af9337878992356d171c8bf5c"
+        },
+        {
+            "date": 1687226417154,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-20-08.log",
+            "hash": "2737459ab1f175f03c7dba99b1bba3c90284bed18c0891845894ba839d513a8d"
+        },
+        {
+            "date": 1687231122522,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-20-09.log",
+            "hash": "9ef9b1e6765528b0311c1f4616e1880ff89b5e13fc8acecff3d62c0d41462f2e"
+        },
+        {
+            "date": 1687234275450,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-20-10.log",
+            "hash": "40817b67189e68e2c0e0957f4425cdb3a60254c2490af5d2c41c74045cc0cec1"
+        },
+        {
+            "date": 1687237698952,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-20-11.log",
+            "hash": "db3dd984a618e4e4eacff0d631b2eaaff586b77bc6825235121ed82fd3f5bae9"
+        },
+        {
+            "date": 1687280343908,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-20-22.log",
+            "hash": "ef96f6a54771ea5bb412377c257bfadf9da0f0372d2bbb168d7d00ed3d66e580"
+        },
+        {
+            "date": 1687281939313,
+            "name": "F:\\JONKAE Mahomud Cours\\NEXT-LEVEL-WEB-DEVELOPMENT\\BigProject\\collage-management\\logs\\winston\\errors\\cm-2023-06-20-23.log",
+            "hash": "815db61d4dae6e3360ba6b653ab8d32dd33c6f9ee8c498cacb3324b202a49a8e"
+        }
+    ],
+    "hashType": "sha256"
 }
