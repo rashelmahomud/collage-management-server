@@ -32,6 +32,12 @@ export const accademicSemesterMonth: academicSemecterMonth[] = [
 ];
 
 export const adcademicSemesterSearchAbleFields = ['title', 'code', 'year'];
+export const academicSemesterFilterAbleFields = [
+  'searchTerm',
+  'title',
+  'code',
+  'year',
+];
 
 export type IAcademiSemesterFilters = {
   searchTerm?: string;
