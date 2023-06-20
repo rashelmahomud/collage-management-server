@@ -13,5 +13,6 @@ router.post(
 );
 router.get('/', AcademicSemesterController.getAllSemester);
 router.get('/:id', AcademicSemesterController.getSingelSemester);
+router.patch('/:id', AcademicSemesterController.updateSemester);
 
 export const SemesterRoute = router;
