@@ -31,6 +31,12 @@ export const accademicSemesterMonth: academicSemecterMonth[] = [
   'December',
 ];
 
+export const adcademicSemesterSearchAbleFields = ['title', 'code', 'year'];
+
+export type IAcademiSemesterFilters = {
+  searchTerm?: string;
+};
+
 export const academicSemesterTitleCodeMapper: {
   [key: string]: string;
 } = {

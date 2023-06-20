@@ -23,23 +23,23 @@ const createSemester: RequestHandler = catchAsync(
   }
 );
 
-const getAllSemester = catchAsync(
-  async (req: Request, res: Response, next: NextFunction) => {
-    const pagenationOptions = pick(req.query, pagenationFields);
+const getAllSemester = catchAsync(async (req: Request, res: Response) => {
+  const filters = pick(req.query, ['searchTerm', 'title', 'code', 'year']);
+  const pagenationOptions = pick(req.query, pagenationFields);
 
-    const result = await AcademicSemesterService.getAllSemester(
-      pagenationOptions
-    );
-    sendResponce(res, {
-      statusCode: httpStatus.OK,
-      success: true,
-      message: 'Academic Semester All Data Get successfully',
-      meta: result.meta,
-      data: result.data,
-    });
-    next();
-  }
-);
+  const result = await AcademicSemesterService.getAllSemester(
+    pagenationOptions,
+    filters
+  );
+  sendResponce(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Academic Semester All Data Get successfully',
+    meta: result.meta,
+    data: result.data,
+  });
+  // next();
+});
 
 export const AcademicSemesterController = {
   createSemester,

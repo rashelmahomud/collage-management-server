@@ -1,0 +1,12 @@
+Tue Jun 20 2023 : 8 : 7 34 [CM-RASHEL] error: $regex has to be a string
+Tue Jun 20 2023 : 8 : 8 58 [CM-RASHEL] error: $regex has to be a string
+Tue Jun 20 2023 : 8 : 9 49 [CM-RASHEL] error: andCondition is not defined
+Tue Jun 20 2023 : 8 : 10 37 [CM-RASHEL] error: $regex has to be a string
+Tue Jun 20 2023 : 8 : 15 1 [CM-RASHEL] error: $regex has to be a string
+Tue Jun 20 2023 : 8 : 15 51 [CM-RASHEL] error: $regex has to be a string
+Tue Jun 20 2023 : 8 : 25 5 [CM-RASHEL] error: $regex has to be a string
+Tue Jun 20 2023 : 8 : 30 41 [CM-RASHEL] error: $regex has to be a string
+Tue Jun 20 2023 : 8 : 41 51 [CM-RASHEL] error: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester"
+Tue Jun 20 2023 : 8 : 43 38 [CM-RASHEL] error: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester"
+Tue Jun 20 2023 : 8 : 48 8 [CM-RASHEL] error: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester"
+Tue Jun 20 2023 : 8 : 49 19 [CM-RASHEL] error: $regex has to be a string

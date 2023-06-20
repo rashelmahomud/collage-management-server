@@ -32,4 +32,4 @@ const calculatePagenation = (option: IOption): IOptionResult => {
   };
 };
 
-export default calculatePagenation;
+export const pagenationHelpers = { calculatePagenation };
