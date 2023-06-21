@@ -44,7 +44,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 // };
 
 // const testId = () => {
-//   const testeID = genaratedStudentId(academicSemester);
+//   const testeID = generatedFacultyId();
 //   console.log(testeID);
 // };
 // testId();
