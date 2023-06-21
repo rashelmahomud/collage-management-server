@@ -1,0 +1,5 @@
+Tue Jun 20 2023 : 10 : 19 33 [CM-RASHEL] error: $and/$or/$nor must be a nonempty array
+Tue Jun 20 2023 : 10 : 29 2 [CM-RASHEL] error: $and/$or/$nor must be a nonempty array
+Tue Jun 20 2023 : 10 : 37 30 [CM-RASHEL] error: $and/$or/$nor must be a nonempty array
+Tue Jun 20 2023 : 10 : 40 41 [CM-RASHEL] error: $and/$or/$nor must be a nonempty array
+Tue Jun 20 2023 : 10 : 52 40 [CM-RASHEL] error: database faild connect ETIMEDOUT 50.17.154.152:27017
