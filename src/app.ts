@@ -38,4 +38,15 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   next();
 });
 
+// const academicSemester = {
+//   year: '2025',
+//   code: '01',
+// };
+
+// const testId = () => {
+//   const testeID = genaratedStudentId(academicSemester);
+//   console.log(testeID);
+// };
+// testId();
+
 export default app;
