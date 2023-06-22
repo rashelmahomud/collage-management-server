@@ -44,7 +44,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 // };
 
 // const testId = () => {
-//   const testeID = generatedFacultyId();
+//   const testeID = generateFacultyId();
 //   console.log(testeID);
 // };
 // testId();

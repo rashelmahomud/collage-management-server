@@ -2,15 +2,15 @@ import { IAcademiSemester } from '../academicSemester/academicSemester.interface
 import { User } from './user.model';
 
 export const findLastStudentId = async (): Promise<string | undefined> => {
-  const lastStudent = await User.findOne({}, { id: 1, _id: 0 })
+  const lastStudent = await User.findOne({ role: 'student' }, { id: 1, _id: 0 })
     .sort({
       createdAt: -1,
     })
     .lean();
-  return lastStudent?.id;
+  return lastStudent?.id ? lastStudent.id.substring(4) : undefined;
 };
 export const genaratedStudentId = async (
-  academicSemester: IAcademiSemester
+  academicSemester: IAcademiSemester | null
 ) => {
   const curentId =
     (await findLastStudentId()) || (0).toString().padStart(5, '0');
@@ -26,21 +26,21 @@ export const genaratedStudentId = async (
 
 //=============^  user generated ID code ^===================
 
-export const findLastFacultyId = async (): Promise<string | undefined> => {
-  const findFaculty = await User.findOne({}, { id: 1, _id: 0 })
-    .sort({ createdAt: -1 })
-    .lean();
-
-  return findFaculty?.id;
-};
-
-export const generatedFacultyId = async (): Promise<string> => {
-  const curentIds =
-    (await findLastFacultyId()) || (0).toString().padStart(5, '0');
-
-  let incrementedFId = (parseInt(curentIds) + 1).toString().padStart(5, '0');
-
-  incrementedFId = ` F-${incrementedFId}`;
-  return incrementedFId;
-};
 //===================faculty genareted id here ^=========================
+
+export const findLastFacultyId = async (): Promise<string | undefined> => {
+  const lastFaculty = await User.findOne({ role: 'faculty' }, { id: 1, _id: 0 })
+    .sort({
+      createdAt: -1,
+    })
+    .lean();
+  return lastFaculty?.id ? lastFaculty.id.substring(2) : undefined;
+};
+
+export const generateFacultyId = async (): Promise<string> => {
+  const currentId =
+    (await findLastFacultyId()) || (0).toString().padStart(5, '0');
+  let incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0');
+  incrementedId = `F-${incrementedId}`;
+  return incrementedId;
+};
