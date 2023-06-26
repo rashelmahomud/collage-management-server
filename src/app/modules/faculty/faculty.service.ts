@@ -68,7 +68,9 @@ const getAllFaculties = async (
 };
 
 const getSingleFaculty = async (id: string): Promise<IFaculty | null> => {
-  const result = await Faculty.findOne({ id })
+  console.log(id, 'faculty');
+
+  const result = await Faculty.findOne({ _id: id })
     .populate('academicDepartment')
     .populate('academicFaculty');
 
@@ -79,7 +81,7 @@ const updateFaculty = async (
   id: string,
   payload: Partial<IFaculty>
 ): Promise<IFaculty | null> => {
-  const isExist = await Faculty.findOne({ id });
+  const isExist = await Faculty.findById(id);
 
   if (!isExist) {
     throw new ApiError(httpStatus.NOT_FOUND, 'Faculty not found !');

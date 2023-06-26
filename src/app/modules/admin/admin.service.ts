@@ -66,7 +66,7 @@ const getAllAdmins = async (
 };
 
 const getSingleAdmin = async (id: string): Promise<IAdmin | null> => {
-  const result = await Admin.findOne({ id }).populate('ManagementDepartment');
+  const result = await Admin.findOne({ _id: id });
   return result;
 };
 
@@ -74,16 +74,13 @@ const updateAdmin = async (
   id: string,
   payload: Partial<IAdmin>
 ): Promise<IAdmin | null> => {
-  const isExist = await Admin.findOne({ id });
+  const isExist = await Admin.findById(id);
 
   if (!isExist) {
     throw new ApiError(httpStatus.NOT_FOUND, 'Admin not found !');
   }
-
   const { name, ...adminData } = payload;
-
   const updatedStudentData: Partial<IAdmin> = { ...adminData };
-
   if (name && Object.keys(name).length > 0) {
     Object.keys(name).forEach(key => {
       const nameKey = `name.${key}` as keyof Partial<IAdmin>;
@@ -102,7 +99,7 @@ const deleteAdmin = async (id: string): Promise<IAdmin | null> => {
   const isExist = await Admin.findOne({ id });
 
   if (!isExist) {
-    throw new ApiError(httpStatus.NOT_FOUND, 'Faculty not found !');
+    throw new ApiError(httpStatus.NOT_FOUND, 'admin not found !');
   }
 
   const session = await mongoose.startSession();
