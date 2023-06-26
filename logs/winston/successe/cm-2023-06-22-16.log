@@ -10,3 +10,15 @@
   label: 'CM-RASHEL',
   timestamp: '2023-06-22T10:21:02.471Z'
 }
+{
+  message: 'database successfully connected here',
+  level: 'info',
+  label: 'CM-RASHEL',
+  timestamp: '2023-06-22T10:24:37.506Z'
+}
+{
+  message: 'Example app listening on port 5000',
+  level: 'info',
+  label: 'CM-RASHEL',
+  timestamp: '2023-06-22T10:24:37.566Z'
+}
