@@ -79,7 +79,7 @@ const updateFaculty = async (
   id: string,
   payload: Partial<IFaculty>
 ): Promise<IFaculty | null> => {
-  const isExist = await Faculty.findById(id);
+  const isExist = await Faculty.findById({ _id: id });
 
   if (!isExist) {
     throw new ApiError(httpStatus.NOT_FOUND, 'Faculty not found !');
@@ -95,15 +95,19 @@ const updateFaculty = async (
     });
   }
 
-  const result = await Faculty.findOneAndUpdate({ id }, updatedFacultyData, {
-    new: true,
-  });
+  const result = await Faculty.findOneAndUpdate(
+    { _id: id },
+    updatedFacultyData,
+    {
+      new: true,
+    }
+  );
   return result;
 };
 
 const deleteFaculty = async (id: string): Promise<IFaculty | null> => {
   // check if the faculty is exist
-  const isExist = await Faculty.findOne({ id });
+  const isExist = await Faculty.findOne({ _id: id });
 
   if (!isExist) {
     throw new ApiError(httpStatus.NOT_FOUND, 'Faculty not found !');
@@ -114,12 +118,12 @@ const deleteFaculty = async (id: string): Promise<IFaculty | null> => {
   try {
     session.startTransaction();
     //delete faculty first
-    const faculty = await Faculty.findOneAndDelete({ id }, { session });
+    const faculty = await Faculty.findOneAndDelete({ _id: id }, { session });
     if (!faculty) {
       throw new ApiError(404, 'Failed to delete student');
     }
     //delete user
-    await User.deleteOne({ id });
+    await User.deleteOne({ _id: id });
     session.commitTransaction();
     session.endSession();
 
