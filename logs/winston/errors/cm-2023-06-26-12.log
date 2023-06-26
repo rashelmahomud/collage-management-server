@@ -1,0 +1,4 @@
+Mon Jun 26 2023 : 12 : 4 57 [CM-RASHEL] error: database faild connect ETIMEDOUT 50.17.154.152:27017
+Mon Jun 26 2023 : 12 : 13 9 [CM-RASHEL] error: database faild connect ETIMEDOUT 50.17.154.152:27017
+Mon Jun 26 2023 : 12 : 53 0 [CM-RASHEL] error: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]
+Mon Jun 26 2023 : 12 : 54 43 [CM-RASHEL] error: Attempted illegal state transition from [TRANSACTION_COMMITTED] to [TRANSACTION_ABORTED]
