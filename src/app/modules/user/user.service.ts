@@ -16,7 +16,6 @@ import {
   generateAdminId,
   generateFacultyId,
 } from './user.ulites';
-
 const createStudent = async (
   student: IStudent,
   user: IUser
@@ -25,6 +24,9 @@ const createStudent = async (
   if (!user.password) {
     user.password = config.default_student_Pass as string;
   }
+
+  //hash password setup
+
   ///SET ROLL
   user.role = 'student';
   const academicSemester = await AcademicSemester.findById(
@@ -85,6 +87,9 @@ const createFaculty = async (
   if (!user.password) {
     user.password = config.default_faculty_pass as string;
   }
+
+  // making a password hashing
+
   // set role
   user.role = 'faculty';
 
