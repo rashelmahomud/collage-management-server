@@ -1,4 +1,4 @@
-import { NextFunction, Request, RequestHandler, Response } from 'express';
+import { Request, RequestHandler, Response } from 'express';
 import httpStatus from 'http-status';
 import { pagenationFields } from '../../../constant/pagenation';
 import { catchAsync } from '../../../shared/catchAsync';
@@ -8,7 +8,7 @@ import { academicSemesterFilterAbleFields } from './academicSemester.constent';
 import { AcademicSemesterService } from './academicSemester.service';
 
 const createSemester: RequestHandler = catchAsync(
-  async (req: Request, res: Response, next: NextFunction) => {
+  async (req: Request, res: Response) => {
     const { ...academicSemesterData } = req.body;
     const result = await AcademicSemesterService.createSemester(
       academicSemesterData
@@ -20,7 +20,6 @@ const createSemester: RequestHandler = catchAsync(
       message: 'Academic Semester created successfully',
       data: result,
     });
-    next();
   }
 );
 

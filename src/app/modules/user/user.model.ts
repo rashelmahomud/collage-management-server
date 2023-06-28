@@ -17,6 +17,11 @@ const userSchema = new Schema<IUser>(
     password: {
       type: String,
       required: true,
+      select: 0,
+    },
+    needsPasswordChange: {
+      type: Boolean,
+      default: true,
     },
 
     student: {
@@ -39,6 +44,25 @@ const userSchema = new Schema<IUser>(
     },
   }
 );
+
+userSchema.statics.isUserExist = async function (
+  id: string
+): Promise<Pick<
+  IUser,
+  'id' | 'password' | 'needsPasswordChange' | 'role'
+> | null> {
+  return await User.findOne(
+    { id },
+    { id: 1, password: 1, needsPasswordChange: 1, role: 1 }
+  );
+};
+
+userSchema.statics.isPasswordMetched = async function (
+  givenPassword: string,
+  savedPassword: string
+): Promise<boolean> {
+  return await bcrypt.compare(givenPassword, savedPassword);
+};
 
 // password hash korar jonno this code
 userSchema.pre('save', async function (next) {
